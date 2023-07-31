@@ -1,0 +1,40 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable-v24/ic_baseline_info_24.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable/background_ed.xml" value="0.155" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable/hihi.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable/ic_person.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/drawable/music_note.xml" value="0.1635" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_listfvt_music.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_signin.xml" value="0.25" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/activity_webview.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_doi_song.xml" value="0.203125" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_hai_huoc.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_suc_khoe.xml" value="0.203125" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_the_gioi.xml" value="0.203125" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_thoi_su.xml" value="0.203125" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_tin_noi_bat.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/frag_tin_xem_nhieu.xml" value="0.203125" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/layout_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/menu_frag.xml" value="0.25" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/music_frag.xml" value="0.22" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/read_frag.xml" value="0.22" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/layout/user_frag.xml" value="0.22" />
+        <entry key="..\:/MOB201/Chuongdkph26546_MOB201_Asm/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

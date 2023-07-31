@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chuongdkph26546_MOB201_Asm</string>
+    <string name="dang_ky">
+        Bạn Chưa Có Tài Khoản? <u>Đăng Ký</u>
+    </string>
+    <string name="login">Đăng Nhập</string>
+    <string name="logout">Đăng Xuất</string>
+</resources>
