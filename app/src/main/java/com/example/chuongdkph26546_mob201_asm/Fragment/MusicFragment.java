@@ -1,7 +1,9 @@
 package com.example.chuongdkph26546_mob201_asm.Fragment;
 
+import android.Manifest;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -24,6 +26,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.chuongdkph26546_mob201_asm.DAO.UserDAO;
@@ -42,7 +45,7 @@ public class MusicFragment extends Fragment {
 
         return fragment;
     }
-
+    private static final int STORAGE_PERMISSION_REQUEST_CODE = 100;
 
     ProgressBar musicBar;
     Button btnPlayStop,btnPause;
@@ -92,10 +95,39 @@ public class MusicFragment extends Fragment {
                 PauseMusic();
             }
         });
-
+        checkAndRequestStoragePermission();
+    }
+    private void checkAndRequestStoragePermission() {
+        if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Yêu cầu quyền truy cập vào kho âm nhạc nếu chưa được cấp
+            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_REQUEST_CODE);
+        } else {
+            // Quyền truy cập đã được cấp, thực hiện các hành động cần thiết
+            // Ví dụ: load danh sách nhạc
+            loadMusicList();
+        }
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == STORAGE_PERMISSION_REQUEST_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Quyền truy cập được cấp, thực hiện các hành động cần thiết
+                // Ví dụ: load danh sách nhạc
+                loadMusicList();
+            } else {
+                // Quyền truy cập bị từ chối, hiển thị thông báo hoặc thực hiện các xử lý phù hợp khác
+                Toast.makeText(requireContext(), "Permission denied", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 
+    private void loadMusicList() {
+        // Thực hiện tải danh sách nhạc từ kho âm nhạc của người dùng
+        getSongList();
+    }
     public void startOrStop(View view) {
         // sự kiện bấm vào nút play
 

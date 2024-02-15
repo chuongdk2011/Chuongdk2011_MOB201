@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         MenuFragment menuFragment = new MenuFragment();
-        ReadFragment readFragment = new ReadFragment();
         MusicFragment musicFragment = new MusicFragment();
         UserFragment userFragment = new UserFragment();
 
@@ -47,9 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_Menu:
                         replaceFragment(menuFragment.newInstance());
                         break;
-                    case R.id.nav_read:
-                        replaceFragment(readFragment.newInstance());
-                        break;
+
                     case R.id.nav_music:
                         replaceFragment(musicFragment.newInstance());
                         break;
